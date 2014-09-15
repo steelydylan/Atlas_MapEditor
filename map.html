@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="Atlas.js"></script>
+	<script>
+	Atlas();
+	Atlas.main(function(){
+		var app = new App();
+		app.load(["map.png","map"]);
+		var map = new Map("map",16,16);
+		console.log(map.width)
+		map.drawData = [
+						[0,0,1,1,1,1],
+						[1,1,0,1,1,0]
+						];
+		app.addChild(map);
+		app.start();
+	});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

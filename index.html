@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atlas MapEditor</title>
+	<link rel="stylesheet" type="text/css" href="callisto.css">
+	<script src="Atlas.js"></script>
+	<script src="jquery.js"></script>
+	<script src="map.js"></script>
+</head>
+<style>
+	.cs-header_heading{
+		margin:0;
+		font-size:24px;
+	}
+</style>
+<body>
+<div class="cs-header">
+	<div class="cs-container">
+		<h1 class="cs-header_heading">Atlas Map Editor</h1>
+	</div>
+</div>
+<div class="cs-container">
+	<div class="cs-row">
+		<div class="cs-col-md-6">
+			<canvas id="map"></canvas>
+			<input type="file" id="imgUpload" />
+			<input type="number" id="splitX" value="32"/>
+			<input type="number" id="splitY" value="24"/>
+		</div>
+		<div class="cs-col-md-6">
+			<canvas id="dest"></canvas>
+			<input type="number" id="destSplitX" value="32"/>
+			<input type="number" id="destSplitY" value="24"/>
+			<a class="cs-btn cs-btn-primary" id="dl">ダウンロード</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
